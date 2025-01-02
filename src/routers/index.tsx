@@ -10,14 +10,12 @@ import City from "../pages/City";
 import Trending from "../pages/Trending";
 import AuthLayout from "../components/auth/AuthLayout";
 import PrivateRoute from "../components/auth/PrivateRoute";
-import Test from "../pages/Test";
 
 const AppRouter: React.FC = () => (
   <Routes>
     {/* Public Routes */}
     <Route index element={<Home />} />
     <Route path="about" element={<About />} >
-        <Route path="test" element={<Test />} />
     </Route>
 
     <Route element={<AuthLayout />}>
