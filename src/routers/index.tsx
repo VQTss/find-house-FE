@@ -29,9 +29,9 @@ const AppRouter: React.FC = () => (
     <Route
       path="dashboard"
       element={
-        <PrivateRoute>
+        // <PrivateRoute>
           <Dashboard />
-        </PrivateRoute>
+        // </PrivateRoute>
       }
     />
 
