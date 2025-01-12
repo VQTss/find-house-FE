@@ -25,16 +25,16 @@ const ContentR: React.FC = () => {
     }, [checked])
 
     return (
-        <div className="flex flex-col">
+        <div className="relative">
             <img src={backGroundRight1} alt="background" className={checked === 1 ? "block" : "hidden"} />
             <img src={backGroundRight2} alt="background" className={checked === 2 ? "block" : "hidden"} />
             <img src={backGroundRight3} alt="background" className={checked === 3 ? "block" : "hidden"} />
             <img src={backGroundRight4} alt="background" className={checked === 4 ? "block" : "hidden"} />
-            <div className="flex flex-row gap-2">
-                <input type="radio" className="relative left-1/2 bottom-10 bg-red-500" name="option" checked={1 == checked} onClick={() => handleOnclick(1)} />
-                <input type="radio" className="relative left-1/2 bottom-10 bg-red-500" name="option" checked={2 == checked} onClick={() => handleOnclick(2)} />
-                <input type="radio" className="relative left-1/2 bottom-10 bg-red-500" name="option" checked={3 == checked} onClick={() => handleOnclick(3)} />
-                <input type="radio" className="relative left-1/2 bottom-10 bg-red-500" name="option" checked={4 == checked} onClick={() => handleOnclick(4)} />
+            <div className="flex flex-row gap-2 justify-center bottom-5 relative">
+                <input type="radio" className=" bottom-10 bg-red-500" name="option" checked={1 == checked} onClick={() => handleOnclick(1)} />
+                <input type="radio" className=" bottom-10 bg-red-500" name="option" checked={2 == checked} onClick={() => handleOnclick(2)} />
+                <input type="radio" className=" bottom-10 bg-red-500" name="option" checked={3 == checked} onClick={() => handleOnclick(3)} />
+                <input type="radio" className=" bottom-10 bg-red-500" name="option" checked={4 == checked} onClick={() => handleOnclick(4)} />
             </div>
         </div>
     );

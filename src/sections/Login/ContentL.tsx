@@ -9,13 +9,13 @@ const ContentL: React.FC = () => {
             <h1 className="text-2xl font-bold">Hello Again!</h1>
             <p className="text-gray-500 text-sm">Enter your credentials to access your account</p>
             <div className="flex flex-row gap-10">
-                <button className="px-8 py-3 w-24 text-red-500 border-2 border-red-500 rounded-full hover:bg-red-200 hover:text-white">
+                <button className="px-2 py-1 w-16 text-red-500 border-2 border-red-500 rounded-full bg-red-100 hover:bg-red-300 hover:text-white">
                     <i className="fa-brands fa-google-plus-g text-xl"></i>
                 </button>
-                <button className="px-8 py-3 w-24 text-blue-500 border-2 border-blue-700 rounded-full hover:bg-blue-200 hover:text-white ">
+                <button className="px-2 py-1 w-16 text-blue-500 border-2 border-blue-700 rounded-full bg-blue-100 hover:bg-blue-300 hover:text-white ">
                     <i className="fa-brands fa-facebook text-xl"></i>
                 </button>
-                <button className="px-8 py-3 w-24 text-black-500 border-2 border-black rounded-full hover:bg-black hover:text-white">
+                <button className="px-2 py-1 w-16 text-black-500 border-2 border-black rounded-full hover:bg-black hover:text-white">
                     <i className="fa-brands fa-microsoft text-xl"></i>
                 </button>
             </div>
