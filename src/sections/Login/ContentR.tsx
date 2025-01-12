@@ -10,13 +10,18 @@ const ContentR: React.FC = () => {
         setChecked(num)
     }
     useEffect(() => {
-        setTimeout(() => {
-            if (checked <= 3) {
-                setChecked(checked => checked + 1)
-            } else {
-                setChecked(1)
-            }
+        const timeout = setTimeout(() => {
+            setChecked(checked => {
+                if (checked <= 3) {
+                    checked += 1
+                    return checked
+                }
+                else return 1
+            })
         }, 3000)
+        return () => {
+            clearTimeout(timeout);
+        }
     }, [checked])
 
     return (
