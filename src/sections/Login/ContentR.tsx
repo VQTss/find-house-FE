@@ -26,10 +26,10 @@ const ContentR: React.FC = () => {
 
     return (
         <div className="flex flex-col">
-            {checked === 1 && <img src={backGroundRight1} alt="background" />}
-            {checked === 2 && <img src={backGroundRight2} alt="background" />}
-            {checked === 3 && <img src={backGroundRight3} alt="background" />}
-            {checked === 4 && <img src={backGroundRight4} alt="background" />}
+            <img src={backGroundRight1} alt="background" className={checked === 1 ? "block" : "hidden"} />
+            <img src={backGroundRight2} alt="background" className={checked === 2 ? "block" : "hidden"} />
+            <img src={backGroundRight3} alt="background" className={checked === 3 ? "block" : "hidden"} />
+            <img src={backGroundRight4} alt="background" className={checked === 4 ? "block" : "hidden"} />
             <div className="flex flex-row gap-2">
                 <input type="radio" className="relative left-1/2 bottom-10 bg-red-500" name="option" checked={1 == checked} onClick={() => handleOnclick(1)} />
                 <input type="radio" className="relative left-1/2 bottom-10 bg-red-500" name="option" checked={2 == checked} onClick={() => handleOnclick(2)} />
