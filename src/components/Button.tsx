@@ -1,9 +1,11 @@
 
 import React from 'react'
 
-const Button = () => {
+const Button = ({ title }) => {
   return (
-    <div>Button</div>
+    <button className="px-8 py-3 mb-3 w-80  text-white bg-blue-400 rounded-full hover:bg-blue-800 ">
+      {title}
+    </button>
   )
 }
 
