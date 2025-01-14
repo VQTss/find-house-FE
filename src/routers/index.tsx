@@ -10,6 +10,7 @@ import City from "../pages/City";
 import Trending from "../pages/Trending";
 import AuthLayout from "../components/auth/AuthLayout";
 import PrivateRoute from "../components/auth/PrivateRoute";
+import Layout from "../pages/Layout";
 
 const AppRouter: React.FC = () => (
   <Routes>
@@ -42,6 +43,9 @@ const AppRouter: React.FC = () => (
 
     {/* Fallback Route */}
     <Route path="*" element={<h1>404 Not Found</h1>} />
+
+    {/* giao dien */}
+    <Route path="layout" element={<Layout />} />
   </Routes>
 );
 
