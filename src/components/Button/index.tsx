@@ -1,6 +1,6 @@
 import ButtonRawTemplate from "./ButtonRaw";
-import { ButtonPrimary } from "./ButtonTemplate";
+import { ButtonCustom } from "./ButtonTemplate";
 
 
 
-export { ButtonRawTemplate, ButtonPrimary }
+export { ButtonRawTemplate, ButtonCustom }

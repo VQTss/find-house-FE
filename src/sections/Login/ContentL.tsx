@@ -1,6 +1,5 @@
-import { Checkbox } from "antd";
 import React from "react";
-import Button from "../../components/Button";
+import Button from "../../components/Button.tsx";
 import Input from "../../components/input/input";
 
 const ContentL: React.FC = () => {

@@ -40,17 +40,38 @@ const ButtonRawSmall: React.FC<{ title: string; color: string; background: strin
 };
 
 //ham de chon button theo type 
-const ButtonRawTemplate: React.FC<{ title: string; color: string; background: string; type: string }> = ({ title, color, background, type }) => {
-  if (type === "full") {
+const ButtonRawTemplate: React.FC<{ title: string; color: string; size: string; type: string }> = ({ title, color, size, type }) => {
+  let background
+  switch (type) {
+    case "primary": {
+      background = "bg-gradient-to-r from-purple-400 to-purple-800"
+      break
+    }
+    case "danger": {
+      background = "bg-gradient-to-r from-red-600 to-red-800"
+      break
+    }
+    case "disabled": {
+      background = "bg-gray-400"
+      color = "gray-600"
+      break
+    }
+    default: {
+      background = type && type.trim() !== "" ? type : "bg-gray-300"
+      break
+    }
+  }
+  console.log(background)
+  if (size === "full") {
     return <ButtonRawFull title={title} color={color} background={background} />
   }
-  else if (type === "large") {
+  else if (size === "large") {
     return <ButtonRawLarge title={title} color={color} background={background} />
   }
-  if (type === "medium") {
+  if (size === "medium") {
     return <ButtonRawMedium title={title} color={color} background={background} />
   }
-  if (type === "small") {
+  if (size === "small") {
     return <ButtonRawSmall title={title} color={color} background={background} />
   }
 }

@@ -2,19 +2,19 @@ import ButtonRawTemplate from "./ButtonRaw";
 import React from 'react';
 
 // Định nghĩa kiểu cho các props
-interface ButtonProps {
+interface ButtonCustomProps {
     title: string;
     color?: string;
     type?: string;
-    background?: string; // optional prop
+    size?: string; // optional prop
 }
 
 // Component ButtonPrimaryRaw
-const ButtonPrimary: React.FC<ButtonProps> = ({ title, color = "white", background = "bg-gradient-to-r from-purple-400 to-purple-800", type = "full" }) => {
+const ButtonCustom: React.FC<ButtonCustomProps> = ({ title, color = "white", size = "full", type = "primary" }) => {
     return (
-        <ButtonRawTemplate title={title} color={color} background={background} type={type} />
+        <ButtonRawTemplate title={title} color={color} size={size} type={type} />
     );
 }
 
 
-export { ButtonPrimary };
+export { ButtonCustom };
