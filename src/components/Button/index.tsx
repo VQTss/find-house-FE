@@ -1,6 +1,6 @@
-import ButtonRaw from "./ButtonRaw";
-import { ButtonPrimaryFull, ButtonPrimaryLarge, ButtonPrimaryMedium, ButtonPrimarySmall } from "./ButtonPrimary";
+import ButtonRawTemplate from "./ButtonRaw";
+import { ButtonPrimary } from "./ButtonTemplate";
 
 
 
-export { ButtonRaw, ButtonPrimaryFull, ButtonPrimaryLarge, ButtonPrimaryMedium, ButtonPrimarySmall }
+export { ButtonRawTemplate, ButtonPrimary }
