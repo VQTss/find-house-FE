@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import section from "../sections/home"
+
 const Home: React.FC = () => {
   const navigate = useNavigate();
 
@@ -17,6 +18,7 @@ const Home: React.FC = () => {
       <section.Feature />
       <section.Footer />
       <h2>Welcome to the Home Page!</h2>
+      <Section_1 />
       <button onClick={handleLogout}>Logout</button>
     </div>
   );
