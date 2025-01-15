@@ -29,7 +29,7 @@ const AppRouter: React.FC = () => (
       path="dashboard"
       element={
         // <PrivateRoute>
-          <Dashboard />
+        <Dashboard />
         // </PrivateRoute>
       }
     />

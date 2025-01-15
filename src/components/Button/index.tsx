@@ -1,5 +1,5 @@
-import ButtonRawTemplate from "./ButtonRaw";
-import { ButtonCustom } from "./ButtonTemplate";
+import { ButtonRawTemplate } from "./ButtonRaw";
+import { ButtonCustom } from "./ButtomCustom";
 
 
 
