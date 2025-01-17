@@ -1,0 +1,57 @@
+.buttonRaw {
+    margin: 3px 2px;
+    padding: 3px 3px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.buttonRaw:hover {
+    cursor: pointer;
+}
+
+.hightlight {
+    background: linear-gradient(to right, rgba(227, 0, 227, 0.696), rgb(183, 0, 255));
+
+    transition: all 200ms ease;
+}
+
+.hightlight:hover {
+    background: rgb(183, 0, 255);
+}
+
+.hightlight:active {
+    background: aqua;
+}
+
+.danger {
+    background: linear-gradient(to right, rgb(253, 51, 51), rgb(255, 0, 0));
+
+}
+
+.danger:hover {
+    background: rgb(255, 0, 0);
+    transition: all 200ms ease;
+}
+
+.danger:active {
+    background: rgb(255, 73, 73);
+}
+
+.neural {
+    background: rgb(178, 178, 178);
+
+}
+
+.neural:hover {
+    background: rgb(84, 84, 84);
+    transition: all 200ms ease;
+}
+
+.neural:active {
+    background: white;
+}
+
+.disabled {
+    background: rgba(128, 128, 128, 0.371);
+    color: gray;
+}

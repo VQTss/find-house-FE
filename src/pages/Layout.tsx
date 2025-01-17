@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonCustom } from "../components/Button/index";
+import { ButtonCustom } from "../components/button/index";
 
 const box = "border-2 bg-gray-300 border-black px-2 py-3 rounded-lg"
 const title = "font-bold text-center"
@@ -44,10 +44,10 @@ const Layout: React.FC = () => {
                     <ButtonCustom title={"Button"} size="large" type="hightlight" />
                     <label>Default</label>
                     <br />
-                    <ButtonCustom title={"Button"} size="large" type="custom" option="bg-purple-800" />
+                    <ButtonCustom title={"Button"} size="large" type="custom" className="bg-purple-800" />
                     <label>Hover</label>
                     <br />
-                    <ButtonCustom title={"Button"} size="large" type="custom" option="bg-purple-100" />
+                    <ButtonCustom title={"Button"} size="large" type="custom" className="bg-purple-100" />
                     <label>Clicked</label>
                     <br />
                     <ButtonCustom title={"Button"} size="large" type="disabled" />
