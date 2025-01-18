@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../components/Button.tsx";
-import Input from "../../components/input/input";
+import Input from "../../components/input/InputRaw.tsx";
 
 const ContentL: React.FC = () => {
     return (
@@ -26,8 +26,6 @@ const ContentL: React.FC = () => {
 const FormLogin: React.FC = () => {
     return (
         <form className="flex flex-col items-center">
-            <Input title="Email" type="text" placeholder="Example@gmail.com" />
-            <Input title="Password" type="password" placeholder="Enter at least 8+ characters" />
             <div className="self-start mt-4 flex flex-row w-full justify-between">
                 <div>
                     <input type="checkbox" />

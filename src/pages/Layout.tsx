@@ -1,13 +1,15 @@
 import React from "react";
 import { ButtonCustom } from "../components/button/index";
+import InputRaw from "../components/input/InputRaw";
 
 const box = "border-2 bg-gray-300 border-black px-2 py-3 rounded-lg"
 const title = "font-bold text-center"
+const row = "flex flex-row justify-between my-3"
 const Layout: React.FC = () => {
 
     return (
         <div>
-            <div className="flex flex-row justify-between">
+            <div className={row}>
                 <div className={box}>
                     <span className="animate-spin inline-block w-5 h-5 border-2 border-t-0 border-black rounded-full"></span>
                     <h1 className={title}>size</h1>
@@ -53,6 +55,11 @@ const Layout: React.FC = () => {
                     <ButtonCustom title={"Button"} size="large" type="disabled" />
                     <label>disabled</label>
                     <br />
+                </div>
+            </div>
+            <div className={row}>
+                <div className={box}>
+                    <InputRaw title="input" />
                 </div>
             </div>
         </div>
